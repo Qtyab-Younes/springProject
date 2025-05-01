@@ -7,13 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MyProjectApplication {
 
     public static void main(String[] args) {
-        var ctx= SpringApplication.run(MyProjectApplication.class, args);
+        SpringApplication.run(MyProjectApplication.class);
 
-        FirstClassService firstClassServ = ctx.getBean(FirstClassService.class);
-        System.out.println(firstClassServ.saySomething());
-        System.out.println(firstClassServ.showVersion());
-        System.out.println(firstClassServ.getDataFromAnotherFile());
-        System.out.println(firstClassServ.getDataFromAppFile());
     }
 
 
